@@ -20,6 +20,7 @@ movies = [{ title: 'Aladdin', rating: 'G', release_date: '25-Nov-1992' },
           { title: 'Raiders of the Lost Ark', rating: 'PG', release_date: '12-Jun-1981' },
           { title: 'Chicken Run', rating: 'G', release_date: '21-Jun-2000' }]
 
-movies.each do |movie|
-  Movie.create!(movie)
+movies.each do |attributes|
+  movie = Movie.find_or_initialize_by(title: attributes[:title])
+  movie.update!(attributes)
 end
