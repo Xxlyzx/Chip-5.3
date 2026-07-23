@@ -4,6 +4,7 @@
 <%#  Part 2: Start here... %>
 
 <%= form_tag movies_path, method: :get, id: 'ratings_form', local: true do %>
+  <%= hidden_field_tag :settings_submitted, "1" %>
   Include:
   <% @all_ratings.each do |rating| %>
     <div class="form-check form-check-inline">
