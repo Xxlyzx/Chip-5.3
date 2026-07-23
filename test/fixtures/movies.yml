@@ -1,0 +1,11 @@
+one:
+  title: Aladdin
+  rating: G
+  description: A test movie
+  release_date: 1992-11-25
+
+two:
+  title: The Terminator
+  rating: R
+  description: Another test movie
+  release_date: 1984-10-26
